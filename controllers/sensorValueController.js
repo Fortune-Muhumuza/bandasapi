@@ -13,6 +13,7 @@ exports.create = (req, res) => {
     const record = new User({
         sensorValue1: req.body.sensorValue1,
         sensorValue2: req.body.sensorValue2,
+        id:req.body.id
     });
 
     // Save Note in the database
